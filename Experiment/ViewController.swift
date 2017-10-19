@@ -18,6 +18,8 @@ class ViewController: UITableViewController {
     override func viewDidLoad() {
         let upstreamData: Driver<[Int]> = Driver.of([1,2,3,4,5,6,7,8,9])
         
+        // Following code is need for Cocoapods
+        // tableView.dataSource = nil
         upstreamData
             .drive(tableView.rx.items(dataSource: dataSource))
             .disposed(by: disposeBag)
