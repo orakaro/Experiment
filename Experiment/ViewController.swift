@@ -16,6 +16,7 @@ class ViewController: UITableViewController {
     private let disposeBag = DisposeBag()
     
     override func viewDidLoad() {
+        tableView.register(UINib(nibName: "CustomCell", bundle: nil), forCellReuseIdentifier: "Cell")
         let upstreamData: Driver<[Int]> = Driver.of([1,2,3,4,5,6,7,8,9])
         
         // Following code is need for Cocoapods
@@ -52,7 +53,4 @@ class ViewController: UITableViewController {
     }
 }
 
-class CustomCell: UITableViewCell {
-    @IBOutlet weak var label: UILabel!
-}
 

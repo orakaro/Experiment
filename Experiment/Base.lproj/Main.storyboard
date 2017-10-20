@@ -16,34 +16,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="60" id="zsd-GV-e6P" customClass="CustomCell" customModule="Experiment" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="60"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zsd-GV-e6P" id="gWm-o8-ev7">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="59.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x0t-bd-T7h">
-                                            <rect key="frame" x="187.5" y="20" width="0.0" height="20"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="20" id="ySY-g5-eRh"/>
-                                            </constraints>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                </tableViewCellContentView>
-                                <constraints>
-                                    <constraint firstItem="x0t-bd-T7h" firstAttribute="centerX" secondItem="zsd-GV-e6P" secondAttribute="centerX" id="dRB-oN-lh1"/>
-                                    <constraint firstItem="x0t-bd-T7h" firstAttribute="centerY" secondItem="zsd-GV-e6P" secondAttribute="centerY" id="jCA-Bd-i11"/>
-                                </constraints>
-                                <connections>
-                                    <outlet property="label" destination="x0t-bd-T7h" id="y6O-nL-sYv"/>
-                                </connections>
-                            </tableViewCell>
-                        </prototypes>
                     </tableView>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UH0-mW-FdC" userLabel="First Responder" sceneMemberID="firstResponder"/>
